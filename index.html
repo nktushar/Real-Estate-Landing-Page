@@ -10,35 +10,68 @@
     <title>Document</title>
 </head>
 <body class="font-urbanist">
-    <nav class="w-full fixed top-0">
-        <div class="container mx-auto py-2 flex justify-between items-center">
-            <div>
-                <h2 class="text-2xl sm:text-3xl font-bold first-letter:text-blue">RESTATE</h2>
+    <div class="">
+        <nav class="w-full fixed top-0 bg-white z-10">
+            <div class="container mx-auto py-2 flex justify-between items-center">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-bold first-letter:text-blue">RESTATE</h2>
+                </div>
+                <ul class="hidden md:block">
+                    <li class="inline-block px-4 py-2 font-semibold text-black hover:text-blue">Home</li>
+                    <li class="inline-block px-4 py-2 font-semibold text-black hover:text-blue">Explore</li>
+                    <li class="inline-block px-4 py-2 font-semibold text-black hover:text-blue">Resources</li>
+                    <li class="inline-block px-4 py-2 font-semibold text-black hover:text-blue">Contact</li>
+                    <li class="inline-block px-4 py-2 font-semibold text-black hover:text-blue">Blog</li>
+                </ul>
+                <div>
+                    <button class="px-4 font-semibold text-lightgray">Sign in</button>
+                    <button class="px-4 py-2 font-semibold text-white bg-pink rounded-lg">Sign up</button>
+                    <img id="hamburger" class="w-6 inline-block mx-3 md:hidden" src="./images/hamburger.png" alt="">
+                </div>
             </div>
-            <ul class="hidden md:block">
-                <li class="inline-block px-4 py-2 font-semibold text-black hover:text-blue">Home</li>
-                <li class="inline-block px-4 py-2 font-semibold text-black hover:text-blue">Explore</li>
-                <li class="inline-block px-4 py-2 font-semibold text-black hover:text-blue">Resources</li>
-                <li class="inline-block px-4 py-2 font-semibold text-black hover:text-blue">Contact</li>
-                <li class="inline-block px-4 py-2 font-semibold text-black hover:text-blue">Blog</li>
-            </ul>
-            <div>
-                <button class="px-4 font-semibold text-lightgray">Sign in</button>
-                <button class="px-4 py-2 font-semibold text-white bg-pink rounded-lg">Sign up</button>
-                <img id="hamburger" class="w-6 inline-block mx-3 md:hidden" src="./images/hamburger.png" alt="">
+    
+            <div id="menu" class="hidden text-center py-4 shadow-lg shadow-lightgray border border-t-lightgray bg-white">
+                <ul>
+                    <li class="my-5 font-semibold text-black hover:text-blue">Home</li>
+                    <li class="my-5 font-semibold text-black hover:text-blue">Explore</li>
+                    <li class="my-5 font-semibold text-black hover:text-blue">Resources</li>
+                    <li class="my-5 font-semibold text-black hover:text-blue">Contact</li>
+                    <li class="my-5 font-semibold text-black hover:text-blue">Blog</li>
+                </ul>
             </div>
+        </nav>
+    </div>
+
+
+    <div class="w-full top-5 relative">
+        <img src="./images/header.jpg" alt="">
+        <div class="w-5/6 absolute left-5 top-10 sm:top-1/4 sm:left-0 sm:right-0 sm:text-center mx-auto sm:w-4/6 lg:w-3/6">
+            <h1 class="text-white text-xl font-bold sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl">Your perfect home is waiting for you</h1>
+            <p class="text-white text-sm my-1 sm:text-lg lg:text-2xl">We have more than 200k properties around to world to show you</p>
+            <button class="bg-white my-2 px-3 py-1 rounded-md text-lightgray hover:bg-gray-300 hover:text-black text-sm lg:text-lg">Explore more</button>
         </div>
 
-        <div id="menu" class="hidden text-center py-4 rounded-b-3xl  shadow-lg shadow-lightgray border border-t-lightgray">
-            <ul>
-                <li class="my-5 font-semibold text-black hover:text-blue">Home</li>
-                <li class="my-5 font-semibold text-black hover:text-blue">Explore</li>
-                <li class="my-5 font-semibold text-black hover:text-blue">Resources</li>
-                <li class="my-5 font-semibold text-black hover:text-blue">Contact</li>
-                <li class="my-5 font-semibold text-black hover:text-blue">Blog</li>
-            </ul>
+        <div class="bg-gray-500">
+            <div class="container  flex flex-wrap justify-between py-6 mx-3">
+                <div class="mx-3 my-2">
+                    <h2>Location</h2>
+                    <p class="text-sm text-pink">Chittagong</p>
+                </div>
+                <div class="mx-3 my-2">
+                    <h2>Type</h2>
+                    <p class="text-sm text-pink">Apartment</p>
+                </div>
+                <div class="mx-3 my-2">
+                    <h2>Price range</h2>
+                    <p class="text-sm text-pink">300k -  600k</p>
+                </div>
+                <div class="mx-3 my-auto">
+                    <button class="bg-dark px-6 py-1 text-sm text-white rounded-lg">Search</button>
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
+
 
     <script src="./app.js"></script>
 </body>
