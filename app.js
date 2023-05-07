@@ -6,6 +6,22 @@ hamburger.addEventListener('click', () => {
 });
 
 
+// Video play and pause
+const video = document.querySelector('#video');
+const playPauseBtn = document.querySelector('#playPauseBtn');
+
+playPauseBtn.addEventListener('click', () => {
+  video.play(); 
+  playPauseBtn.classList.add('hidden');
+}); 
+
+video.addEventListener('click', () => {
+  video.pause();
+  playPauseBtn.classList.remove('hidden');
+});
+
+
+
 // dark mode
 const moon = document.querySelector('#moon');
 const sun = document.querySelector('#sun');
